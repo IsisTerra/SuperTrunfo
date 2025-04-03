@@ -28,7 +28,7 @@ int main()
 
     // Informações da segunda carta:
     printf("Dados salvos. Agora, insira os dados da sua segunda carta\n");
-    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
+    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados): ");
     scanf("%c", &estado2);
     printf("A letra do estado seguida de um número de 01 a 04 (ex: A01, B03): ");
     scanf("%s", &codigo2);
