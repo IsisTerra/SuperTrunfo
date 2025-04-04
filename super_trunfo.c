@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-int main()
-{
+// Desafio Super Trunfo - Países
+
+int main() {
+
     char estado, estado2;
     char codigo[4], codigo2[4];
     char cidade[50], cidade2[50];
@@ -12,11 +14,11 @@ int main()
 
     // Informações da primeira carta:
     printf("Por favor, insira os dados da sua primeira carta como solicitado\n");
-    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados): ");
-    scanf("%c", &estado);
-    printf("A letra do estado seguida de um número de 01 a 04 (ex: A01, B03): ");
+    printf("Insira a letra, de 'A' a 'H': ");
+    scanf(" %c", &estado); // Espaço para que o enter não seja lido como o caractere escolhido
+    printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
     scanf("%s", &codigo);
-    printf("O nome da cidade (sem espaços. Ex.: RioDeJaneiro): ");
+    printf("O nome da cidade: ");
     scanf("%s", &cidade);
     printf("O número de habitantes da cidade: ");
     scanf("%d", &populacao);
@@ -29,11 +31,11 @@ int main()
 
     // Informações da segunda carta:
     printf("Dados salvos. Agora, insira os dados da sua segunda carta\n");
-    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados): ");
-    scanf("%c", &estado2);
-    printf("A letra do estado seguida de um número de 01 a 04 (ex: A01, B03): ");
+    printf("Insira a letra, de 'A' a 'H': ");
+    scanf(" %c", &estado2); // Espaço para que o enter não seja lido como o caractere escolhido
+    printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
     scanf("%s", &codigo2);
-    printf("O nome da cidade (sem espaços. Ex.: RioDeJaneiro): ");
+    printf("O nome da cidade: ");
     scanf("%s", &cidade2);
     printf("O número de habitantes da cidade: ");
     scanf("%d", &populacao2);
@@ -42,12 +44,12 @@ int main()
     printf("O Produto Interno Bruto da cidade: ");
     scanf("%f", &pib2);
     printf("A quantidade de pontos turísticos na cidade: ");
-    scanf("%d", &turismo2);
+    scanf("%d \n", &turismo2); //Espaçar mais o conteúdo
 
     // Impressão de informações das duas cartas:
 
     //Carta 1:
-    printf("Carta 1:\n");
+    printf("\n Carta 1:\n"); //Mais uma linha para separar o conteúdo
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigo);
     printf("Nome da cidade: %s\n", cidade);
@@ -57,7 +59,7 @@ int main()
     printf("Número de Pontos Turísticos: %d\n", turismo);
 
     //Carta 2:
-    printf("Carta 2:\n");
+    printf("\n Carta 2:\n"); //Mais uma linha para separar o conteúdo
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da cidade: %s\n", cidade2);
