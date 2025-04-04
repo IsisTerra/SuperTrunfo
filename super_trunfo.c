@@ -2,7 +2,8 @@
 
 int main()
 {
-    char estado, estado2, codigo, codigo2;
+    char estado, estado2;
+    char codigo[4], codigo2[4];
     char cidade[50], cidade2[50];
     int populacao, populacao2, turismo, turismo2;
     float area, area2, pib, pib2;
@@ -47,23 +48,23 @@ int main()
 
     //Carta 1:
     printf("Carta 1:\n");
-    printf("%c\n", estado);
-    printf("%s\n", codigo);
-    printf("%s\n", cidade);
-    printf("%d\n", populacao);
-    printf("%f\n", area);
-    printf("%f\n", pib);
-    printf("%d\n", turismo);
+    printf("Estado: %c\n", estado);
+    printf("Código: %s\n", codigo);
+    printf("Nome da cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %f\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Número de Pontos Turísticos: %d\n", turismo);
 
     //Carta 2:
     printf("Carta 2:\n");
-    printf("%c\n", estado2);
-    printf("%s\n", codigo2);
-    printf("%s\n", cidade2);
-    printf("%d\n", populacao2);
-    printf("%f\n", area2);
-    printf("%f\n", pib2);
-    printf("%d\n", turismo2);
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da cidade: %s\n", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %f\n", area2);
+    printf("PIB: %f\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", turismo2);
 
     return 0;
 }
